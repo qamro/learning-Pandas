@@ -4,7 +4,7 @@
 
 
 
-**Hands-on  d projects  learning data 
+**Hands-on  d projects  learning  
 
 
 
