@@ -4,7 +4,7 @@
 
 
 
-**Hands-on  d projects  learning data analysis
+**Hands-on  d projects  learning data 
 
 
 
