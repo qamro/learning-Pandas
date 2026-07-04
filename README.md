@@ -4,7 +4,7 @@
 
 
 
-**Hands-on  d projects  learning  
+**Hands-on  d projects    
 
 
 
