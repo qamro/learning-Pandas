@@ -4,7 +4,7 @@
 
 
 
-**Hands-on exercises and projects  learning data analysis, cleanin
+**Hands-on exercises and projects  learning data analysis, 
 
 
 
