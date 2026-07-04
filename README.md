@@ -4,7 +4,7 @@
 
 
 
-**Hands-on exercises and projects for learning data analysis, cleaning, transformation,    
+**Hands-on exercises and projects  learning data analysis, cleaning, transformation,    
 
 
 
