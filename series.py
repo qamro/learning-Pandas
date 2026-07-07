@@ -4,3 +4,6 @@ import pandas as pd
 # The axis labels are collectively referred to as the index.
 # A pandas Series can be created using the following constructor :
 # pandas.Series(data, index, dtype, name, copy)
+data = [10, 234, 32, 443, 500]
+series = pd.Series(data)
+print(series)
