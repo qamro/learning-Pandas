@@ -7,3 +7,7 @@ import pandas as pd
 data = [10, 234, 32, 443, 500]
 series = pd.Series(data)
 print(series)
+# the index is by default an integer index starting from 0.
+# You can also specify your own index labels.
+series_with_index = pd.Series(data, index=['a', 'b', 'c', 'd', 'e'])
+print(series_with_index)
