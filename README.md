@@ -4,7 +4,7 @@
 
 
 
-**Hands-on exercises  , , transformation, and  with .**
+**Hands-on   , , transformation, and  with .**
 
 
 
