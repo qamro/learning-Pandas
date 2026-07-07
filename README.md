@@ -4,7 +4,7 @@
 
 
 
-**Hands-on   , , , and  with .**
+**Hands-on   , , , and   .**
 
 
 
