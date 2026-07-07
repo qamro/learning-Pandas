@@ -4,7 +4,7 @@
 
 
 
-**Hands-on exercises and projectssis, cleaning, transformation, and  with Pandas.**
+**Hands-on exercises and projectssis, cleaning, transformation, and  with .**
 
 
 
