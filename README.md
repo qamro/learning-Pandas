@@ -4,7 +4,7 @@
 
 
 
-**Hands-on exercises and , cleaning, transformation, and  with .**
+**Hands-on exercises and , , transformation, and  with .**
 
 
 
