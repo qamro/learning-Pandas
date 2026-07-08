@@ -6,9 +6,12 @@ import pandas as pd
 # A pandas DataFrame can be created using the following constructor:
 # pandas.DataFrame(data, index, columns, dtype, copy)
 data = {
-    'Name': ['Qamro', 'Bassem', 'Firas', 'Ronaldo', 'Messi'],
-    'Age': [18, 18, 19, 41, 39],
-    'City': ['Sétif', 'Mila', 'Jijel', 'Lisbon', 'Miami']
+    "Name": ["Qamro", "Bassem", "Firas", "Seddik", "Raiden"],
+    "Age": [18, 18, 19, 41, 39],
+    "City": ["Sétif", "Mila", "Jijel", "Batna", "Béjaia"]
 }
 df = pd.DataFrame(data)
 print(df)
+print()
+df_with_index = pd.DataFrame(data, index=['student1', 'student2', 'student3', 'student4', 'student5']) 
+print(df_with_index)
