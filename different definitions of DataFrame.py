@@ -43,4 +43,36 @@ print()
 
 
 
-# a numpy array
+# a numpy array 
+# its just like the list of lists, but its more efficient and faster.
+array = np.array([
+    ["Qamro", 18, "Sétif"],
+    ["Bassem", 18, "Mila"],
+    ["Firas", 19, "Jijel"],     
+    ["Seddik", 41, "Batna"],
+    ["Raiden", 39, "Béjaia"]
+])
+df_from_array = pd.DataFrame(array, columns=["Name", "Age", "City"])
+print(df_from_array) # each inner list represents one row.
+print()
+
+
+# from another DataFrame
+# it returns a new DataFrame with the same data as the original DataFrame.
+df_from_df = pd.DataFrame(df)
+print(df_from_df) 
+print()
+
+
+
+# from a series
+# it returns a new DataFrame with the same data as the original Series.
+s1 = pd.Series(["Qamro", "Bassem", "Firas"])
+s2 = pd.Series([20, 21, 22])
+
+df = pd.DataFrame({
+    "Name": s1,
+    "Age": s2
+})
+print(df)
+print()
