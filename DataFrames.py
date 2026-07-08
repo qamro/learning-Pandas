@@ -5,3 +5,10 @@ import pandas as pd
 # It is generally the most commonly used pd object.
 # A pandas DataFrame can be created using the following constructor:
 # pandas.DataFrame(data, index, columns, dtype, copy)
+data = {
+    'Name': ['Qamro', 'Bassem', 'Firas', 'Ronaldo', 'Messi'],
+    'Age': [18, 18, 19, 41, 39],
+    'City': ['Sétif', 'Mila', 'Jijel', 'Lisbon', 'Miami']
+}
+df = pd.DataFrame(data)
+print(df)
