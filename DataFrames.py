@@ -16,3 +16,15 @@ print()
 df_with_index = pd.DataFrame(data, index=["student1", "student2", "student3", "student4", "student5"]) 
 print(df_with_index)
 print()
+
+# Note: that the index labels must be unique and of the same length as the data.
+# to access the elements of a DataFrame
+# you can use the column labels to access the columns of the DataFrame.
+print(df["Name"])  # Accessing the "Name" column
+print(df[["Name", "Age"]])  # Accessing multiple columns
+print()
+# you can also use the loc method to access the rows of the DataFrame.
+print(df_with_index.loc["student1"])  # Accessing the first row
+print()
+# you can also use the iloc method to access the rows of the DataFrame by integer index.
+print(df_with_index.iloc[0])  # Accessing the first row by integer index

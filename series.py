@@ -20,6 +20,8 @@ print(series[0])  # Accessing the first element
 print(series_with_index['a'])  # Accessing the element with index label 'a'
 # or you can use the index labels with loc method   
 print(series_with_index.loc['a'])  # Accessing the element with index label 'a'
+# you can also use the iloc method to access the rows of the DataFrame by integer index.
+print(series_with_index.iloc[0])  # Accessing the first row by integer index
 print()
 # to change a value in a Series, you can use the index label to assign a new value.
 series_with_index['a'] = 100
