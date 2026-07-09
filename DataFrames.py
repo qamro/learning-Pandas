@@ -39,6 +39,8 @@ print()
 
 
 # to access a specific value in the DataFrame, you can use the column label and the index label.
+# we use the loc or iloc method to access a specific value in the DataFrame.
+# df.loc[index_label, column_label] or df.iloc[row_index, column_index]
 print(df_with_index.loc["student1", "Name"])  # Accessing the value in the "Name" column of the first row
 print(df_with_index.iloc[0, 0])  # Accessing the value in the first column of the first row by integer index
 print() 
