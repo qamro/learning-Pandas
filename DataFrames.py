@@ -18,6 +18,10 @@ print(df_with_index)
 print()
 
 # Note: that the index labels must be unique and of the same length as the data.
+
+
+
+
 # to access the elements of a DataFrame
 # you can use the column labels to access the columns of the DataFrame.
 print(df["Name"])  # Accessing the "Name" column
@@ -66,3 +70,29 @@ print(df_with_index.iloc[[0, 1], [0, 1]])
 df_with_index.loc["student1", "Age"] = 20
 df_with_index.loc["student1", "City"] = "Algiers"
 print(df_with_index)
+print()
+
+
+
+
+# to add a new column to a DataFrame, you can use the column label and assign a new value.
+# here we have the same country which is Algeria for all the students
+# we can add a new column to the DataFrame and assign the value "Algeria" to all the rows.
+df_with_index["Country"] = "Algeria" 
+print(df_with_index)
+# otherwise, we can assign different values to each row by using a list or a Series.
+df_with_index["Country"] = ["Algeria", "Portugal", "Tunisia", "Libya", "Egypt"]
+print(df_with_index)
+print()
+
+
+
+
+
+# to add a new row to a DataFrame, you can use the loc method with a new index label and assign a new value.
+df_with_index.loc["student6"] = ["Ahmed", 25, "Skikda", "Algeria"]
+print(df_with_index)
+# or by pd.concat() method, we can concatenate two DataFrames together.
+new_row = pd.DataFrame([{"Name": "Ahmed", "Age": 25, "City": "Skikda", "Country": "Algeria"}], index=["student6"])
+df = pd.concat([df_with_index, new_row])    
+print(df)
