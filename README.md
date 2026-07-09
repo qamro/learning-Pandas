@@ -2,7 +2,7 @@
 
 
 
-**Hads- eresnd poects for learning dalyi     
+**Hads- eresnd poects for learnindalyi     
 
  
 
