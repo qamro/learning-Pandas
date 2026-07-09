@@ -32,10 +32,13 @@ print()
 print(df_with_index.iloc[0])  # Accessing the first row by integer index
 print()
 
+
+
 # accessing multiple rows using loc and iloc
 print(df_with_index.iloc[0:2])  # Accessing the first two rows by integer index
 print(df_with_index.loc["student1":"student2"])  # Accessing the first two rows by index label
 print()
+
 
 
 # to access a specific value in the DataFrame, you can use the column label and the index label.
@@ -49,12 +52,14 @@ print(df_with_index.at["student1", "Name"])  # Accessing the value in the "Name"
 print()
 
 
+
 # to access many values in the DataFrame, you can use the loc method with a list of index labels and a list of column labels.
 # Accessing the "Name" and "Age" columns of the first two rows
 print(df_with_index.loc[["student1", "student2"], ["Name", "Age"]])   
 # or we can use the iloc method with a list of integer indexes and a list of integer indexes.
 # Accessing the first two rows and the first two columns by integer index
 print(df_with_index.iloc[[0, 1], [0, 1]])
+
 
 
 # to change a value in a DataFrame, you can use the column label and the index label to assign a new value.
