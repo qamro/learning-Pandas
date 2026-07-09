@@ -2,7 +2,7 @@
 
 
 
-**Hands-n exercises and projects for learning data anlysis,      
+**Hands-n exerises and projects for learning data anlysis,      
 
 
  
