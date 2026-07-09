@@ -2,7 +2,7 @@
 
 
 
-**Hads- eresd cts folyi     
+**Hads- eresd cts foyi     
 
  
 
