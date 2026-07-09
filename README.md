@@ -2,7 +2,7 @@
 
 
 
-**Hads- eresd poects for lrnindlyi     
+**Hads- eresd poects for lrninlyi     
 
  
 
