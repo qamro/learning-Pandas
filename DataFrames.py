@@ -96,3 +96,18 @@ print(df_with_index)
 new_row = pd.DataFrame([{"Name": "Ahmed", "Age": 25, "City": "Skikda", "Country": "Algeria"}], index=["student6"])
 df = pd.concat([df_with_index, new_row])    
 print(df)
+print()
+
+
+
+# to add new rows to a DataFrame, you can use the loc method with a new index label and assign a new value.
+df_with_index.loc["student7"] = ["Raid", 30, "Sétif", "Algeria"]
+df_with_index.loc["student8"] = ["Yacine", 35, "Biskra", "Algeria"]
+print(df_with_index)
+# or by pd.concat() method, we can concatenate two DataFrames together.
+new_rows = pd.DataFrame([
+    {"Name": "Raid", "Age": 30, "City": "Sétif", "Country": "Algeria"},
+    {"Name": "Yacine", "Age": 35, "City": "Biskra", "Country": "Algeria"}
+], index=["student7", "student8"])
+df = pd.concat([df_with_index, new_rows])
+print(df)
