@@ -2,7 +2,7 @@
 
 
 
-**Hads- xeresnd pojects for learning data anlyis,      
+**Hads- xeresnd poects for learning data anlyis,      
 
 
  
