@@ -2,7 +2,7 @@
 
 
 
-**Hands-n exerises and projects for learning data anlysis,      
+**Hads-n exerises and projects for learning data anlysis,      
 
 
  
