@@ -2,7 +2,7 @@
 
 
 
-**Hads- eresnd poects for learning data anlyis,     
+**Hads- eresnd poects for learning data anlyi     
 
  
 
