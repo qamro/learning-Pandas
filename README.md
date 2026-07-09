@@ -2,7 +2,7 @@
 
 
 
-**Hads- eresnd poects for learnindlyi     
+**Hads- eresnd poects for lernindlyi     
 
  
 
