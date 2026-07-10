@@ -1,3 +1,5 @@
+from operator import index
+
 import pandas as pd
 
 # DataFrames are two-dimensional labeled data structures with columns of potentially different types.
@@ -19,6 +21,13 @@ print()
 
 # Note: that the index labels must be unique and of the same length as the data.
 
+
+
+
+# you can set a column as an index
+df_with_column_index = df.set_index("Name")
+print(df_with_column_index)
+print()
 
 
 
