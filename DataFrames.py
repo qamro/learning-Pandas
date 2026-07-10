@@ -23,7 +23,7 @@ print()
 
 
 
-# you can set a column as an index
+# you can set a column as an index using set_index method
 df_with_column_index = df.set_index("Name")
 print(df_with_column_index)
 print()
