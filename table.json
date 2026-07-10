@@ -1,0 +1,40 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Name",
+                "type":"string"
+            },
+            {
+                "name":"Age",
+                "type":"integer"
+            },
+            {
+                "name":"City",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Name":"Qamro",
+            "Age":20,
+            "City":"S\u00e9tif"
+        },
+        {
+            "index":1,
+            "Name":"Scofield",
+            "Age":22,
+            "City":"Fox River"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "columns":[
+        "Name",
+        "Age",
+        "City"
+    ],
+    "index":[
+        0,
+        1
+    ],
+    "data":[
+        [
+            "Qamro",
+            20,
+            "S\u00e9tif"
+        ],
+        [
+            "Scofield",
+            22,
+            "Fox River"
+        ]
+    ]
+}
