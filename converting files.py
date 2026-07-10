@@ -14,6 +14,8 @@ df = pd.DataFrame({
 
 # Converting the DataFrame to a CSV file
 
+# we use index=False to avoid saving the row index in the CSV file.
+# if we use index=True (default), the row index will be saved in the CSV file as an additional column.
 df.to_csv("prison_break.csv", index=False)      # Save to CSV (don't save the row index)
 df_csv = pd.read_csv("prison_break.csv")        # Read CSV into a DataFrame
 
@@ -25,6 +27,7 @@ df_csv = pd.read_csv("prison_break.csv")        # Read CSV into a DataFrame
 # Converting the DataFrame to a JSON file
 
 # when we convert a DataFrame to JSON, we can specify the orientation of the JSON data using the orient parameter.
+# NOTE: the default orientation is 'columns', which means that the JSON data will be organized by columns.
 # NOTE: indent parameter is just for JSON files not the CSV files
 # and we add indent=4 to make the JSON file more readable.
 # because indent=4 adds 4 spaces of indentation to each level of the JSON data, making it easier to read and understand.
