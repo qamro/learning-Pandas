@@ -35,3 +35,32 @@ print()
 
 # SQL database
 # Suppose the SQL table students contains:
+"""
+| Name    | Age |
+| ------- | --: |
+| Qamro   |  20 |
+| Moh     |  21 |
+| Raiden  |  22 |
+"""
+# for example we work with SQLite database,
+# we can use the sqlite3 module to connect to the database and read the data from the students table.
+import sqlite3
+
+conn = sqlite3.connect("school.db")
+df = pd.read_sql("SELECT * FROM students", conn)
+print(df)
+conn.close()  # close the connection to the database
+
+# for example we work with MySQL database,
+# we can use the mysql-connector-python module to connect to the database and read the data from the students table.
+import mysql.connector
+
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="your_password",
+    database="school"
+)
+df = pd.read_sql("SELECT * FROM students", conn)
+print(df)
+conn.close()   # close the connection to the database
