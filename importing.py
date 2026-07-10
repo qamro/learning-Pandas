@@ -9,7 +9,7 @@ print(df)  # printing the DataFrame
 print(df.to_string()) # that's it 
 
 
-# CSV file
+# JSON file
 df = pd.read_csv("students.csv")  #  reading a CSV file named "students.csv"
 print(df)  # printing the DataFrame
 
