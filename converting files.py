@@ -51,3 +51,29 @@ df.to_json("table.json", orient="table", indent=4)
 
 # Read JSON back into a DataFrame
 df_json = pd.read_json("records.json")
+
+
+
+
+
+
+
+# to convert a CSV file to a JSON file 
+"""
+| Conversion       | pandas function  |
+| ---------------- | ---------------- |
+| CSV → DataFrame  | `pd.read_csv()`  |
+| DataFrame → JSON | `df.to_json()`   |
+"""
+
+
+
+
+
+# to convert a JSON file to a CSV file 
+"""
+| Conversion       | pandas function  |
+| ---------------- | ---------------- |
+| JSON → DataFrame  | `pd.read_json()`  |
+| DataFrame → CSV | `df.to_csv()`   |
+"""
