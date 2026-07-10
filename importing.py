@@ -29,3 +29,9 @@ print(df)  # printing the DataFrame
 # if u want to print all the rows of the DataFrame, you can use the to_string() method.
 print(df.to_string()) # that's it 
 print()
+
+
+
+
+# SQL database
+# Suppose the SQL table students contains:
