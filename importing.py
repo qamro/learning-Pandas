@@ -34,6 +34,9 @@ print()
 
 
 # SQL database
+# NOTE: to read data from a SQL database, you need to install the appropriate database driver for your database.
+# here just an example of how to read data from a SQL database using pandas.
+# here the example is for SQLite and MySQL databases, but you can use other databases as well.
 # Suppose the SQL table students contains:
 """
 | Name    | Age |
