@@ -30,3 +30,5 @@ print()
 # selection by row index and column label
 print(df.loc[0, "Name"])  # Accessing the value in the first row
 print(df.loc[0, ["Name", "Age"]])  # Accessing multiple values in the first row
+print(df.loc[[0, 1], ["Name", "Age"]])  # Accessing multiple rows and columns
+print(df.loc[0:2, ["Name", "Age"]])  # Accessing a range of rows and specific columns   
