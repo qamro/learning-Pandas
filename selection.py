@@ -23,4 +23,10 @@ print()
 df_with_index = pd.read_csv("students.csv", index_col=["Name"])
 print(df_with_index)
 print(df_with_index.loc["Seddik"])  # Accessing the first row by index label
-print()
+print() 
+
+
+
+# selection by row index and column label
+print(df.loc[0, "Name"])  # Accessing the value in the first row
+print(df.loc[0, ["Name", "Age"]])  # Accessing multiple values in the first row
