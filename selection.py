@@ -50,3 +50,12 @@ print(df.iloc[0:4:2, 0:2])  # Accessing a range of rows and columns by integer i
 print()
 print()
 print()
+
+
+# a little practice
+student = input("Enter the name of the student: ")
+
+try:
+    print(df_with_index.loc[student])  # Accessing the row of the student by index label
+except KeyError:
+    print(f"{student} not found.")    
