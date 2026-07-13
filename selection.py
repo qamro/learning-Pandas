@@ -10,6 +10,8 @@ print()
 print(df[["Name", "Age"]])  # Accessing multiple columns
 print()
 
+
+
 # selection by row index
 print(df.loc[0])  # Accessing the first row 
 print()
