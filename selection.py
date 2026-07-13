@@ -48,3 +48,5 @@ print(df.iloc[0:2, 0:2])  # Accessing a range of rows and columns by integer ind
 print()
 print(df.iloc[0:4:2, 0:2])  # Accessing a range of rows and columns by integer index with a step of 2
 print()
+print()
+print()
