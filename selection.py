@@ -29,6 +29,16 @@ print()
 
 # selection by row index and column label
 print(df.loc[0, "Name"])  # Accessing the value in the first row
+print()
 print(df.loc[0, ["Name", "Age"]])  # Accessing multiple values in the first row
+print()
 print(df.loc[[0, 1], ["Name", "Age"]])  # Accessing multiple rows and columns
+print()
+print(df.iloc[0:2])  # Accessing a range of rows and all columns
+print()
 print(df.loc[0:2, ["Name", "Age"]])  # Accessing a range of rows and specific columns   
+print()
+print(df.iloc[0:2])  # Accessing a range of rows and all columns
+print()
+print(df.iloc[0:2, 0:2])  # Accessing a range of rows and columns by integer index
+print()
