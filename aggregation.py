@@ -33,7 +33,7 @@ print()
 # aggregate function on specific columns in the DataFrame. 
 
 # 
-print(df.sum())  # Get the sum of the numeric columns
+print(df["Age"].sum())  # Get the sum of the numeric columns
 print()
 print(df.mean()) # get the mean of numeric columns
 print()
