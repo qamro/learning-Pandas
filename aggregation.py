@@ -6,6 +6,10 @@ df = pd.read_csv("students.csv")
 print(df)
 print()
 
+
+
+# aggregate function on the whole DataFrame. 
+
 # if we try this aggregate function on a column that contains non-numeric values, we will get an error.
 # for example, if we try to get the sum of the "Name" column.
 #  we will get an error because the "Name" column contains non-numeric values.
@@ -22,3 +26,8 @@ print()
 print(df.count()) # in count function we dont need to pass the numeric_only=True 
                     # count function returns the number of value in each column 
 print()
+
+
+
+
+# aggregate function on specific columns in the DataFrame. 
