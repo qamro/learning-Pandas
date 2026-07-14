@@ -41,6 +41,6 @@ print(df["Age"].min()) # get the minimum of numeric columns
 print()
 print(df["Age"].max()) # get the maximum of numeric columns
 print()
-print(df.count()) # in count function we dont need to pass the numeric_only=True 
+print(df["Age"].count()) # in count function we dont need to pass the numeric_only=True 
                     # count function returns the number of value in each column 
 print()
