@@ -33,7 +33,7 @@ print()
 # aggregate function on specific columns in the DataFrame. 
 
 # in these functions we don't need to pass the numeric_only=True because Age column is basically numeric 
-print(df["Age"].sum())  # Get the sum of the numeric columns
+print(df["Age"].sum())  # Get the sum of the Age columns
 print()
 print(df["Age"].mean()) # get the mean of numeric columns
 print()
