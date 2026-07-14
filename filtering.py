@@ -30,3 +30,4 @@ print()
 # for example, to filter rows have an age lower than 20 and are from Sétif.
 age_city_filter = df[(df["Age"] < 20) & (df["City"] == "Sétif")]
 print(age_city_filter)  
+print()
