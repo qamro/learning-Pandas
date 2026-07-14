@@ -31,3 +31,7 @@ print()
 age_city_filter = df[(df["Age"] < 20) & (df["City"] == "Sétif")]
 print(age_city_filter)  
 print()
+# for example, to filter rows have an age greater than 20 or are from Sétif.
+age_city_filter2 = df[(df["Age"] > 20) | (df["City"] == "Sétif")]
+print(age_city_filter2) 
+print()
