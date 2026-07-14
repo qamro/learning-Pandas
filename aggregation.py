@@ -36,7 +36,7 @@ print(df.sum())  # Get the sum of the numeric columns
 print()
 print(df.mean()) # get the mean of numeric columns
 print()
-print(df.min(numeric_only=True)) # get the minimum of numeric columns
+print(df.min()) # get the minimum of numeric columns
 print()
 print(df.max(numeric_only=True)) # get the maximum of numeric columns
 print()
