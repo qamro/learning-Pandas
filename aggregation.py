@@ -32,7 +32,7 @@ print()
 
 # aggregate function on specific columns in the DataFrame. 
 
-print(df.sum(numeric_only=True))  # Get the sum of the numeric columns
+print(df.sum())  # Get the sum of the numeric columns
 print()
 print(df.mean(numeric_only=True)) # get the mean of numeric columns
 print()
