@@ -59,3 +59,10 @@ print(df[["Age", "Country", "Name"]].max(numeric_only=True)) # get the maximum o
 print()
 print(df[["Age", "Country", "Name"]].count()) # get the number of values in the mentioned columns
 print()
+
+
+
+
+
+
+# we can use aggregate functions with groupby() method.
