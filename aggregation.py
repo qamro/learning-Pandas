@@ -5,3 +5,17 @@ import pandas as pd
 df = pd.read_csv("students.csv")
 print(df)
 print()
+
+# if we try this aggregate function on a column that contains non-numeric values, we will get an error.
+# for example, if we try to get the sum of the "Name" column.
+#  we will get an error because the "Name" column contains non-numeric values.
+# so we need to select only the numeric columns before applying the aggregate functions.
+# and we do that by passing numeric_only=True in the aggregate function.
+print(df.sum(numeric_only=True))  # Get the sum of the numeric columns
+print()
+print(df.mean(numeric_only=True)) # get the mean of numeric columns
+print()
+print(df.min(numeric_only=True)) # get the minimum of numeric columns
+print()
+print(df.max(numeric_only=True)) # get the maximum of numeric columns
+print()
