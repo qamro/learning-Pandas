@@ -37,7 +37,7 @@ print(df["Age"].sum())  # Get the sum of the Age columns
 print()
 print(df["Age"].mean()) # get the mean of Age columns
 print()
-print(df["Age"].min()) # get the minimum of numeric columns
+print(df["Age"].min()) # get the minimum of Age columns
 print()
 print(df["Age"].max()) # get the maximum of numeric columns
 print()
