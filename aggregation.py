@@ -49,3 +49,13 @@ print()
 # generally if we use an aggregate functions on multiple columns:
 # if all the columns contains numeric values we dont pass numeric_only=True.
 # if not all the columns contains numeric values we should pass numeric_only=True, for example:
+print(df[["Age", "Country", "Name"]].sum(numeric_only=True))  # Get the sum of the mentioned columns
+print()
+print(df[["Age", "Country", "Name"]].mean(numeric_only=True)) # get the mean of the mentioned columns
+print()
+print(df[["Age", "Country", "Name"]].min(numeric_only=True)) # get the minimum of the mentioned columns
+print()
+print(df[["Age", "Country", "Name"]].max(numeric_only=True)) # get the maximum of the mentioned columns
+print()
+print(df[["Age", "Country", "Name"]].count()) # get the number of values in the mentioned columns
+print()
