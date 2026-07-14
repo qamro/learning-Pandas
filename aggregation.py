@@ -47,3 +47,5 @@ print(df["Age"].count()) # get the number of values in Age column
 print()
 
 # generally if we use an aggregate functions on multiple columns:
+# if all the columns contains numeric values we dont pass numeric_only=True.
+# if not all the columns contains numeric values we should pass numeric_only=True, for example:
