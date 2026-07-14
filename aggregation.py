@@ -30,6 +30,8 @@ print()
 
 
 
+
+
 # aggregate function on specific columns in the DataFrame. 
 
 # in these functions we don't need to pass the numeric_only=True because Age column is basically numeric 
@@ -43,3 +45,5 @@ print(df["Age"].max()) # get the maximum of Age columns
 print()
 print(df["Age"].count()) # get the number of values in Age column
 print()
+
+# generally if we use an aggregate functions on multiple columns:
