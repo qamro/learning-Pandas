@@ -64,6 +64,6 @@ print()
 
 
 
-# this is the most common use
+# this is the most common use of aggregate functions.
 # we can use aggregate functions with groupby() method.
 
