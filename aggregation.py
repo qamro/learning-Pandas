@@ -164,3 +164,30 @@ CS          F         2500.0
 IoT         F         1600.0
             M         2000.0
 """
+
+
+
+# Iterate through groups(This prints each department and its corresponding rows)
+for department, group in df2.groupby("Department"):
+    print(department)
+    print(group)
+    print()
+print()
+"""
+the output:
+AI
+    Students Department  Salary Gender
+0    Qamro         AI    5000      M
+1   Bassem         AI    3200      M
+3     Mouh         AI    4350      F
+
+CS
+    Students Department  Salary Gender
+2   Raiden         CS    2500      F
+
+IoT
+    Students Department  Salary Gender
+4     Raid        IoT    2000      M
+5   Seddik        IoT    1600      F
+"""
+    
