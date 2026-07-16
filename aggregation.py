@@ -91,7 +91,7 @@ groups = df2.groupby("Department")
 """
 this creates a group:
 AI → Qamro, Bassem, Mouh
-# CS → Raiden
+CS → Raiden
 # IoT → Raid, Seddik
 """
 
