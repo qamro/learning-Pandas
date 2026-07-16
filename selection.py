@@ -23,7 +23,7 @@ df_with_index = df.set_index("Name")
 print(df_with_index)
 print(df_with_index.loc["Qamro"])  # Accessing the first row by index label
 print()
-# or we use the usuam method to set a column as the index of the DataFrame when we create the DataFrame.    
+# or we use the index_col=["Name"] to set a column as the index of the DataFrame when we create the DataFrame.    
 df_with_index = pd.read_csv("students.csv", index_col=["Name"])
 print(df_with_index)
 print(df_with_index.loc["Seddik"])  # Accessing the first row by index label
