@@ -145,3 +145,22 @@ AI        4183.333333  5000  3200  12550
 CS        2500.000000  2500  2500   2500
 IoT       1800.000000  2000  1600   3600
 """
+
+
+
+# Group by multiple columns
+
+# Suppose we add another column:
+df2["Gender"] = ["M", "M", "F", "F", "M", "F"]
+
+print(df2.groupby(["Department", "Gender"])["Salary"].mean())
+print()
+"""
+the output:
+Department  Gender
+AI          F         4350.0
+            M         4100.0
+CS          F         2500.0
+IoT         F         1600.0
+            M         2000.0
+"""
