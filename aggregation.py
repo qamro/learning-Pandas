@@ -64,9 +64,30 @@ print()
 
 
 
+
+
+
+
 # this is the most common use of aggregate functions.
 # we can use aggregate functions with groupby() method.
 # the groupby() method is used to splits data into groups
 # apply an operation to each group then combine the results 
 # its one of the most useful tools and methods for Data Analysis
 # the syntax of groupby method is simple: df.groupby("the column used to create the groups")
+# if there are many columns used to create the groups:
+# df.groupby(["the first column, the second, the third, ..."])
+# to see the the effect of the groupby() method perfectly in the output we should we must create another df.
+data2 = {"Students": ["Qamro", "Bassem", "Raiden", "Mouh", "Raid", "Seddik"],
+    "Department": ["AI", "AI", "CS", "AI", "IoT", "IoT"],
+    "Salary": ["5000", "3200", "2500", "4350", "2000", "1600"]
+    }
+df2 = pd.DataFrame(data2)
+print(df2)
+print()
+
+# group by one column
+groups = df2.groupby("Department")
+# This creates groups:
+# AI → Qamro, Bassem, Mouh
+# CS → Raiden
+# IoT → Raid, Seddik
