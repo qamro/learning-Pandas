@@ -66,4 +66,7 @@ print()
 
 # this is the most common use of aggregate functions.
 # we can use aggregate functions with groupby() method.
-# the groupby() method 
+# the groupby() method is used to splits data into groups
+# apply an operation to each group then combine the results 
+# its one of the most useful tools and methods for Data Analysis
+# the syntax of groupby method is simple: df.groupby("the column used to create the groups")
