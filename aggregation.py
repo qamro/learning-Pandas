@@ -79,15 +79,69 @@ print()
 # to see the the effect of the groupby() method perfectly in the output we should we must create another df.
 data2 = {"Students": ["Qamro", "Bassem", "Raiden", "Mouh", "Raid", "Seddik"],
     "Department": ["AI", "AI", "CS", "AI", "IoT", "IoT"],
-    "Salary": ["5000", "3200", "2500", "4350", "2000", "1600"]
+    "Salary": [5000, 3200, 2500, 4350, 2000, 1600]
     }
 df2 = pd.DataFrame(data2)
 print(df2)
 print()
 
+
 # group by one column
 groups = df2.groupby("Department")
-# This creates groups:
-# AI → Qamro, Bassem, Mouh
+"""
+this creates a group:
+AI → Qamro, Bassem, Mouh
 # CS → Raiden
 # IoT → Raid, Seddik
+"""
+
+
+# Calculate the average salary
+print(df2.groupby("Department")["Salary"].mean())
+print()
+"""
+the output:
+Department
+AI     4183.333333
+CS     2500.000000
+IoT    1800.000000  
+"""
+
+
+# Sum salaries
+print(df2.groupby("Department")["Salary"].sum())
+print()
+"""
+the output:
+Department
+AI     12550
+CS      2500
+IoT     3600
+"""
+
+
+# Count employees
+print(df2.groupby("Department").size())
+print()
+"""
+the output:
+Department
+AI     3
+CS     1
+IoT    2
+"""
+
+
+
+# Multiple aggregations
+# NOTE: we can use this multiple aggregation syntax for series or normal DataFrame without groupby() method
+print(df2.groupby("Department")["Salary"].agg(["mean", "max", "min", "sum"]))
+print()
+"""
+the output:
+                mean   max   min    sum
+Department                                
+AI        4183.333333  5000  3200  12550
+CS        2500.000000  2500  2500   2500
+IoT       1800.000000  2000  1600   3600
+"""
