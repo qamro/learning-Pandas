@@ -117,10 +117,13 @@ print()
 
 
 
-# Remove duplicate data
+# Remove duplicate rows 
 # using df.drop_duplicates() method
 # tp perform this operation clearly we need to add another duplicate row
-df.loc[5] = ["Raiden", 39, "Béjaia", "Algeria", 10.01, "Bird", False]
+df.loc[5] = ["Raiden", 39, "Béjaya", "Algeria", 10.01, "Bird", False]
 print(df)
 print()
-# Remove the duplicate data which is the last row with index 5
+# Remove the duplicate data which is the last row with index 5 
+clean_df = df.drop_duplicates()
+print(clean_df)
+print()
