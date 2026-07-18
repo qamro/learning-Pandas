@@ -109,4 +109,4 @@ print(df)
 print()
 # change the type data in Rich column from integer to boolean cuz the column contains only 0 and 1 values
 df["Rich"] = df["Rich"].astype(bool)
-pr
+print()
