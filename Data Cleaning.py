@@ -39,7 +39,7 @@ print()
 # Drop all the rows that contain a missing value(float("nan") or None)
 # Drop all the rows that contain a missing data like "float("nan") data" or "None data"
 # we need to add new columns that contain missing data to perform this operation
-df["Average"] = [10.15, float("nan"), 12.88, None, 10.01]
+df["Average"] = [10.15, float("nan"), 12.88, float("nan"), 10.01]
 df["Pet"] = ["Cat", "Dog", None, None, "Bird"]
 print(df)
 print()
@@ -109,4 +109,4 @@ print(df)
 print()
 # change the type data in Rich column from integer to boolean cuz the column contains only 0 and 1 values
 df["Rich"] = df["Rich"].astype(bool)
-print()
+print(df)
