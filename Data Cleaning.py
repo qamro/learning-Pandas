@@ -111,3 +111,10 @@ print()
 df["Rich"] = df["Rich"].astype(bool)
 print(df)
 print()
+
+
+
+
+
+
+# Remove duplicate values
