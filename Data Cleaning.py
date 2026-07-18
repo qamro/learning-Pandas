@@ -38,6 +38,13 @@ print()
 df["Average"] = [10.15, float("nan"), 12.88, None, 10.01]
 print(df)
 print()
+
 # Drop all the rows that contain missing data in the Average column
 df_1 = df.dropna(subset=["Average"]) # dropna method means drop Not Available
 print(df_1)
+print()
+
+# To replace all the missing data by a specific value in the average column
+df_2 = df.fillna({"Average": "We dont know"})
+print(df_2)
+print()
