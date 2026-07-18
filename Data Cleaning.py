@@ -103,4 +103,6 @@ print()
 
 # Fix or change data types
 # we need to add a new column to make it clear and perform this operation
-df[""]
+df["Rich"] = [0, 0, 0, 1, 0]
+print(df)
+print()
