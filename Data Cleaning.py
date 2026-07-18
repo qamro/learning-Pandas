@@ -30,8 +30,10 @@ print()
 
 # Handle missing data
 
+# NOTE: None means nothing here, no value
+# NOTE: float("nan")"Not a Number" used to indicate an undefined, invalid, or missing numeric value, while still technically being of type float.
 # Drop all the rows that contain a missing value(float("nan") or None)
-# Drop all the rows that contain a missing data like "float("nan")(Not a Number) data" or "None data"
+# Drop all the rows that contain a missing data like "float("nan") data" or "None data"
 # we need to add new columns that contain missing data to perform this operation
 df["Average"] = [10.15, float("nan"), 12.88, None, 10.01]
 print(df)
