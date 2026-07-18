@@ -30,11 +30,12 @@ print()
 
 # Handle missing data
 
-# Drop the rows that contain a missing value(float("nan") or None)
-# Drop the rows that contain a "float("nan")(Not a Number) data" or "None data"
+# Drop all the rows that contain a missing value(float("nan") or None)
+# Drop all the rows that contain a missing data like "float("nan")(Not a Number) data" or "None data"
 # we need to add new columns that contain missing data to perform this operation
 df["Average"] = [10.15, float("nan"), 12.88, None, 10.01]
 print(df)
 print()
-df_1 = df.dropna(subset=["Average"])
+# Drop all the rows that contain missing data in the Average column
+df_1 = df.dropna(subset=["Average"]) # dropna method means drop Not Available
 print(df_1)
