@@ -74,6 +74,7 @@ print()
 
 
 
+
 # Standardize text in a specific column
 # using all the different string methods
 # for example make all the values in the city column in lower letters
@@ -88,3 +89,9 @@ print()
 df["City"] = df["City"].str.capitalize()
 print(df)
 print()
+
+
+
+
+
+# Fix or change data types
