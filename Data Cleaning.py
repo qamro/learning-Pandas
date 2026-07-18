@@ -71,3 +71,20 @@ df["City"] = df["City"].replace({"Sétif": "SÉTIF",
                                 "Béjaia": "BÉJAYA"})
 print(df)
 print()
+
+
+
+# Standardize text in a specific column
+# using all the different string methods
+# for example make all the values in the city column in lower letters
+df["City"] = df["City"].str.lower()
+print(df)
+print()
+# make all the values in the city column in upper letters
+df["City"] = df["City"].str.upper()
+print(df)
+print()
+# for example make all the values in the city column start with a capital letter
+df["City"] = df["City"].str.capitalize()
+print(df)
+print()
