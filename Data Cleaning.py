@@ -123,4 +123,4 @@ print()
 df.loc[5] = ["Raiden", 39, "Béjaia", "Algeria", 10.01, "Bird", False]
 print(df)
 print()
-# Remove the duplicate data which are the 
+# Remove the duplicate data which is the last row with index 5
