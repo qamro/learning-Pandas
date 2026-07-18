@@ -45,6 +45,7 @@ print(df_1)
 print()
 
 # To replace all the missing data by a specific value in the average column
+# using the fillna({"column": "the new data that we want to fill"})
 df_2 = df.fillna({"Average": "We dont know"})
 print(df_2)
 print()
