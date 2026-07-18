@@ -10,6 +10,8 @@ print()
 
 
 
+
+
 # Drop irrelevant columns
 
 # Drop Country column
@@ -24,6 +26,8 @@ print()
 df3 = df.drop(columns=["Country", "City", "Age"])
 print(df3)
 print()
+
+
 
 
 
@@ -62,6 +66,8 @@ print()
 
 
 
+
+
 # Fix inconsistent values and data in a specific column
 # using df["column"].replace({dictionary of previous data as a keys and new data as a values})
 df["City"] = df["City"].replace({"Sétif": "SÉTIF",
@@ -71,6 +77,7 @@ df["City"] = df["City"].replace({"Sétif": "SÉTIF",
                                 "Béjaia": "BÉJAYA"})
 print(df)
 print()
+
 
 
 
@@ -95,3 +102,5 @@ print()
 
 
 # Fix or change data types
+# we need to add a new column to make it clear and perform this operation
+df[""]
