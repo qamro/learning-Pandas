@@ -36,6 +36,7 @@ print()
 # Drop all the rows that contain a missing data like "float("nan") data" or "None data"
 # we need to add new columns that contain missing data to perform this operation
 df["Average"] = [10.15, float("nan"), 12.88, None, 10.01]
+df["Pet"] = ["Cat", "Dog", None, None, "Bird"]
 print(df)
 print()
 
@@ -43,9 +44,17 @@ print()
 df_1 = df.dropna(subset=["Average"]) # dropna method means drop Not Available
 print(df_1)
 print()
-
-# To replace all the missing data by a specific value in the average column
-# using the fillna({"column": "the new data that we want to fill"})
-df_2 = df.fillna({"Average": "We dont know"})
+# Drop all the rows that contain missing data in the Average and Pet columns
+df_2 = df.dropna(subset=["Average", "Pet"])
 print(df_2)
+print()
+
+# replace all the missing data by a specific value in the average column
+# using the fillna({"column": "the new data that we want to fill"})
+df_3 = df.fillna({"Average": "No Average"})
+print(df_3)
+print()
+# replace all the missing data by a specific value in the average and Pet columns
+df_3 = df.fillna({"Average": "No Average", "Pet": "No Pet"})
+print(df_3)
 print()
