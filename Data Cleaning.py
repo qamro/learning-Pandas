@@ -59,8 +59,8 @@ df_3 = df.fillna({"Average": "No Average"})
 print(df_3)
 print()
 # replace all the missing data by a specific value in the average and Pet columns
-df_3 = df.fillna({"Average": "No Average", "Pet": "No Pet"})
-print(df_3)
+df_4 = df.fillna({"Average": "No Average", "Pet": "No Pet"})
+print(df_4)
 print()
 
 
