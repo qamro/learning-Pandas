@@ -58,3 +58,16 @@ print()
 df_3 = df.fillna({"Average": "No Average", "Pet": "No Pet"})
 print(df_3)
 print()
+
+
+
+
+# Fix inconsistent values and data in a specific column
+# using df["column"].replace({dictionary of previous data as a keys and new data as a values})
+df["City"] = df["City"].replace({"Sétif": "SÉTIF",
+                                "Mila": "MILA",
+                                "Jijel": "JIJEL",
+                                "Batna": "BATNA",
+                                "Béjaia": "BÉJAYA"})
+print(df)
+print()
