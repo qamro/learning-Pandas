@@ -119,6 +119,7 @@ print()
 
 # Remove duplicate rows 
 # using df.drop_duplicates() method
+# NOTE:
 # tp perform this operation clearly we need to add another duplicate row
 df.loc[5] = ["Raiden", 39, "Béjaya", "Algeria", 10.01, "Bird", False]
 print(df)
