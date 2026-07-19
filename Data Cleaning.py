@@ -84,14 +84,17 @@ print()
 
 # Standardize text in a specific column
 # using all the different string methods
+
 # for example make all the values in the city column in lower letters
 df["City"] = df["City"].str.lower()
 print(df)
 print()
+
 # make all the values in the city column in upper letters
 df["City"] = df["City"].str.upper()
 print(df)
 print()
+
 # for example make all the values in the city column start with a capital letter
 df["City"] = df["City"].str.capitalize()
 print(df)
@@ -107,6 +110,7 @@ print()
 df["Rich"] = [0, 0, 0, 1, 0]
 print(df)
 print()
+
 # change the type data in Rich column from integer to boolean cuz the column contains only 0 and 1 values
 df["Rich"] = df["Rich"].astype(bool)
 print(df)
@@ -123,6 +127,7 @@ print()
 df.loc[5] = ["Raiden", 39, "Béjaya", "Algeria", 10.01, "Bird", False]
 print(df)  # the last row with index 5 is exactly the same row as the row with index 4
 print()
+
 # Remove the duplicate data which is the last row with index 5 
 clean_df = df.drop_duplicates() 
 print(clean_df)
