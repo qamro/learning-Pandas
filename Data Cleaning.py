@@ -53,9 +53,19 @@ df_2 = df.dropna(subset=["Average", "Pet"])
 print(df_2)
 print()
 
+"""
+other ways to handle missing data:
+df.dropna(axis=0)       # Remove rows with NaN
+df.dropna(axis=1)       # Remove columns with NaN
+df.dropna(how="all")    # Remove only rows where ALL values are NaN
+df.dropna(how="any")    # Remove rows where ANY value is NaN (default)
+"""
+
+
+
 # replace all the missing data by a specific value in the average column
 # using the fillna({"column": "the new data that we want to fill"})
-df_3 = df.fillna({"Average": "No Average"})
+df_3 = df.fillna({"Average": "No Average"}) # or we can use this syntax: df_3 = df["Average"].fillna("No Average")
 print(df_3)
 print()
 # replace all the missing data by a specific value in the average and Pet columns
@@ -63,6 +73,10 @@ df_4 = df.fillna({"Average": "No Average", "Pet": "No Pet"})
 print(df_4)
 print()
 
+"""
+if you want to replace every missing data (NaN or None) with a specific value (0 for example):
+df.fillna(0) 
+"""
 
 
 
