@@ -33,11 +33,7 @@ print(df2)
 
 
 # Merge
-"""
-NOTE: u should remove the id column from one the dataframes to make the pd.join() works 
-Because the pd.join() its the same as pd.merge() but pd.join() works on indexes 
-We shouldn't have any same column in the dataframes that we want to make a pd.join()
-"""
+
 # INNER
 pd.merge(df1, df2, on="id", how="inner")
 
@@ -56,6 +52,12 @@ pd.merge(df1, df2, on="id", how="outer")
 
 
 # Join
+
+"""
+NOTE: u should remove the id column from one the dataframes to make the pd.join() works 
+Because the pd.join() its the same as pd.merge() but pd.join() works on indexes 
+We shouldn't have any same column in the dataframes that we want to make a pd.join()
+"""
 
 # Left join
 df1.join(df2, how="left")
